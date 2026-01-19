@@ -44,26 +44,35 @@ The number of your chosen topic: `#`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The main goal of this survey is to find out the real reasons why our junior and entry-level staff are leaving the company so fast. We want to identify specific "pain points" in their daily work life so we can suggest better benefits or management changes to make them stay.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target Population: All entry-level and lower-level employees currently working at the tech company.
+
+Sampling Frame: The complete list of active employees in the HR database who are ranked at Grade 1 to Grade 3 (junior levels).
+
+Sampling Units: Individual employees.
+
+Overall Sampling Strategy: I will use Stratified Random Sampling. I will divide the employees by department (e.g., IT, Marketing, Finance) and then randomly pick names from each group. This ensures we hear from all departments, not just the loudest one.
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. How long have you been with the company, and which department are you in?
+
+2. On a scale of 1 to 10, how happy are you with your current workload?
+
+3. Do you feel that your current salary and benefits are fair compared to other tech companies? (Yes / No / Not Sure)
+
+4. How would you describe your relationship with your immediate supervisor or manager?
+
+5. In the last 3 months, have you actively looked for a job at another company?
+
+6. What is the biggest challenge you face in your role that makes you feel frustrated?
+
+7 If you could change one thing about the office culture to make you stay longer, what would it be?
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +80,58 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. Sample Type
+The survey used a Stratified Random Sample. The population was divided into different groups (strata) based on geography (provinces) to make sure every part of Canada is represented.
+
+2. Sample Size
+The documentation says the field sample was about 50,000 units. From this, they expected to get about 24,000 completed questionnaires. (The actual final number of respondents is usually slightly lower after cleaning).
+
+3. Target Population
+All persons 15 years of age and older living in the 10 provinces of Canada. It excludes people living in institutions (like hospitals or prisons) for more than six months.
+
+4. Sampling Frame
+The frame was built using a list of telephone numbers (landline and cellular) linked to addresses from the Census and other administrative files.
+
+5. Survey Mode(s)
+For the first time in 2018, it used a multi-mode approach:
+
+rGSS (Internet): Respondents could fill it out online.
+
+CATI (Telephone): Interviewers called those who didn't finish online.
+
+6. Timeline
+Collection Period: September 4 to December 28, 2018.
+
+Reference Period: The questions asked about activities done in the past 12 months.
+
+7. Response Rate
+The overall response rate was 41.9%.
+
+
+8. Weights
+Every respondent has a weighting factor (called WGHT_PER). This tells us how many people in the real population that one respondent represents. They also used "Bootstrap weights" to check for errors in the math (variance estimation).
+
+9. Data Processing
+The processing was done using the SSPE system. It involved automated flow edits to fix logic errors, manual and auto-coding for jobs/industries, and record linkage with tax files to get accurate income info. They also created 'derived variables' to help simplify the data for analysis.
+
+10. Cleaning, Imputation, etc.
+Cleaning: Used "Flow Edits" to make sure if someone said they "never volunteered," they didn't answer questions about "how many hours they volunteered."
+
+Imputation: They used the "Nearest Neighbour" method (Donor Imputation). If a person left a question blank, the computer found a "similar" person who answered it and copied that answer.
+
+11. Sources of Error
+Sampling Error: Because it’s a sample and not a full census, results might vary slightly.
+
+Non-sampling Error: This includes "Coverage Error" (missing people without phones) and "Response Error" (people giving wrong answers by mistake).
+
+12. Limitations, known biases, etc.
+Exclusion: People in the Territories (Yukon, NWT, Nunavut) were not included.
+
+Language: Only available in English and French; those who don't speak these might be left out.
+
+Mode Effect: People might answer differently on a computer vs. talking to a human on the phone.
+
+13. Link to Documentation: https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=796234
 ```
 
 ## Rubric
